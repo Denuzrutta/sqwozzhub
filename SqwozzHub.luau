@@ -998,7 +998,6 @@ Functions.GetNearestHidingSpot = function()
 			return Child
 		end
 	end
-
 	if IsHidingSpotName(Object.Name) or IsHidingSpotName(Object.Parent and Object.Parent.Name) then
 		return Object:FindFirstChild("HidePrompt") or Object:FindFirstChild("HidingPrompt")
 	end
@@ -5998,7 +5997,6 @@ Groupboxes.Floors_Farming:AddButton({
         Globals.KnobFarmStarted = true
     end
 })
-
 Groupboxes.Floors_Farming:AddDivider()
 Groupboxes.Floors_Farming:AddButton({
 	Text = "Start Death Farm",
@@ -7838,7 +7836,7 @@ Functions.TriggerPrompt = function(Prompt)
 	if Prompt.Parent.Name == "KeyObtainFake" or Prompt.Parent.Name == "TithingPlate" then return end
 	if Prompt.Parent.Name == "StarBottle" then return end
     -- archives
-	if Prompt.parent.Name == "ArchivesStorageBox" then return end
+	if Prompt.Parent.Name == "ArchivesStorageBox" then return end
 	if Prompt.Parent.Name == "Briefcase" then return end
 	if Prompt.Name == "SinkPrompt" or Prompt.Parent.Name == "Faucet" then return end
 	if Prompt.Parent.Name == "PaperPlanePickup" or Prompt.Parent.Name == "PaperPlane" then return end
@@ -7857,7 +7855,7 @@ Functions.TriggerPrompt = function(Prompt)
 	if Prompt.Name == "PortraitDupePrompt" or Prompt.Parent.Name == "MirrorTool" then return end
 	if Prompt.Name == "LaptopPrompt" or Prompt.Parent.Name == "SecretLaptop" then return end
 	if Prompt.Parent.Name == "StairwellFireAlarm" or Prompt.Parent.Parent.Name == "StairwellFireAlarm" then return end
-	if Prompt.Parent.name == "CobblerFriendly" then return end
+	if Prompt.Parent.Name == "CobblerFriendly" then return end
 	if Prompt.Parent.Name == "StairwellTerminal" then return end
 	if Prompt.Parent.Parent.Name == "MeldChord" then return end
 
@@ -7998,7 +7996,6 @@ local function HandleEntitySpawn(Entity)
 		Model = Entity.Parent
 	end
 	if not Model or not Model:IsA("Model") then return end
-
 	local EntityData = Entities[Model.Name]
 	if not EntityData then return end
 	if Model:GetAttribute("Abysall_EntityHandled") then return end
