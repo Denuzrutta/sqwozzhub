@@ -16,7 +16,7 @@ getgenv().Abysall = {
 }
 
 
-local BaseUrl = "https://raw.githubusercontent.com/therealcookiemonsterof1966/AbysallContinued/main/"
+local BaseUrl = "https://raw.githubusercontent.com/Denuzrutta/sqwozzhub/refs/heads/main/SqwozzHub.luau"
 
 getgenv().Abysall = {
     Environment = loadstring(game:HttpGet(BaseUrl .. "Components/Environment.luau"))(),
@@ -77,10 +77,6 @@ end
 
 Abysall.Interface = loadstring(game:HttpGet(
     BaseUrl .. "Components/Interface.luau"
-))()
-
-Abysall.Analytics = loadstring(game:HttpGet(
-    BaseUrl .. "Components/Analytics.luau"
 ))()
 
 
